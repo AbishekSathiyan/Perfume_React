@@ -1,0 +1,291 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Changed font family */
+}
+
+/* Custom Font Style */
+.poppins-custom {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #4A90E2; /* New color */
+    padding: 15px 30px; /* Adjusted padding */
+}
+
+.navbar .logo {
+    font-size: 1.8rem; /* Increased size */
+    color: #fff; /* White logo color */
+    font-weight: bold; /* Bold logo */
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center the navigation */
+    gap: 25px; /* Increased gap */
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem; /* Slightly larger font */
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Search bar styling */
+#search {
+    width: 100%;
+    max-width: 97%; /* Reduced max-width */
+    margin: 20px;
+    padding: 12px;
+    font-size: 18px; /* Larger font size */
+    border: 2px solid #E2E8F0; /* Light border color */
+    border-radius: 30px; /* More rounded corners */
+    background-color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+/* Focus effect */
+#search:focus {
+    outline: none;
+    border-color: #00C97B; /* Changed to teal */
+    background-color: #f1f1f1; /* Lighter background on focus */
+    box-shadow: 0 0 8px rgba(0, 201, 123, 0.5);
+}
+
+/* Placeholder styling */
+#search::placeholder {
+    color: #B0B0B0;
+    font-style: italic;
+}
+
+/* Main Container */
+main {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Image container styling */
+.img_1, .img_2, .img_3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #F2F4F7; /* New light background */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.img_1:hover, .img_2:hover, .img_3:hover {
+    cursor: pointer;
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.img_1 img, .img_2 img, .img_3 img {
+    width: 100%;
+    max-width: 220px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+/* Caption text styling */
+.img_1 p, .img_2 p, .img_3 p {
+    font-size: 12px;
+    color: #444;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Heading 2 styling */
+h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2D2D2D;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Paragraph text styling */
+p {
+    font-size: 17px;
+    color: #6D6D6D;
+    line-height: 1.7;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Main container for About and About Me */
+.about-container {
+    display: flex;
+    justify-content: space-between; /* Aligns content in the same row */
+    gap: 20px; /* Adds spacing between the two sections */
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* About section styling */
+.about, .about_me {
+    background-color: #F4F4F4; /* Light gray background */
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Ensures both sections take equal width */
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for About sections */
+.about:hover, .about_me:hover {
+    transform: translateY(-8px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Title styling inside About sections */
+.about h1, .about_me h1 {
+    font-size: 2rem;
+    color: #333; /* Dark text */
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Paragraph text styling inside About sections */
+.about p, .about_me p {
+    font-size: 1rem;
+    color: #666; /* Soft gray text */
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stacks sections on small screens */
+        gap: 30px;
+    }
+}
+
+
+/* Contact form styling */
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F4F7FA;
+}
+
+.contact-form-card {
+    max-width: 35rem;
+    width: 100%;
+    padding: 2.5rem;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Input and Textarea */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #4299E1; /* Highlight color */
+}
+
+/* Button */
+.contact-form-button {
+    width: 100%;
+    padding: 1.2rem 0;
+    background-color: #3B82F6;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.contact-form-button:hover {
+    background-color: #2563EB;
+}
+
+.contact-form-button:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px rgba(66, 153, 241, 0.6);
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px; /* Reduced navbar padding */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .img_1, .img_2, .img_3 {
+        flex: none;
+        max-width: 100%;
+    }
+
+    .about, .about_me {
+        margin: 20px 0;
+        padding: 30px;
+    }
+
+    .contact-form-card {
+        max-width: 100%;
+        padding: 2rem;
+    }
+}
