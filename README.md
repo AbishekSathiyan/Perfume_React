@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# Perfume_React
+This project is a single-page React app with a responsive navbar, smooth scrolling using `react-scroll`, and a hamburger menu for mobile view. It includes four sections: Home, Products, About, and Contact. The design is responsive, offering a clean, minimal look with smooth transitions. Ideal for learning React navigation and responsive design.
+>>>>>>> 9f20624a5a4b330cbc6bcf0fd3c1a71c670eafb8
